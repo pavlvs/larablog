@@ -55,17 +55,6 @@ class PagesController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Admin\Page  $page
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Page $page)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Admin\Page  $page
