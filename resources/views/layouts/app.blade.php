@@ -57,6 +57,23 @@
 
                                 </div>
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Blog Posts<span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('blog.index') }}">
+                                        Posts
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('blog.create') }}">
+                                        Add a Post
+                                    </a>
+
+                                </div>
+                            </li>
                             @can('manageUsers', App\User::class)
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -67,9 +84,6 @@
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('users.index') }}">
                                             User List
-                                        </a>
-                                        <a class="dropdown-item" href="{{ route('pages.create') }}">
-                                            Add a Page
                                         </a>
                                     </div>
                                 </li>
@@ -99,7 +113,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                                                                         document.getElementById('logout-form').submit();">
+                                                                                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 

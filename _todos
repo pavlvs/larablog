@@ -1,1 +1,5 @@
-// TODO: Add pagination
+// DONE: Add pagination
+// DONE: Add status messages after creating and editing
+// DONE: Added Post model with migrations
+// DONE: Added BlogController resource controller
+// DONE: Run migration for posts

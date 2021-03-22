@@ -21,6 +21,8 @@ Route::get('/admin', function () {
     return view('admin.index');
 })->middleware('admin');
 
+Route::resource('/admin/blog', 'Admin\BlogController', ['except' => ['show']]);
+
 Route::resource('/admin/pages', 'Admin\PagesController', ['except' => ['show']]);
 
 Route::resource('/admin/users', 'Admin\UsersController', ['except' => ['show', 'create', 'store']]);
