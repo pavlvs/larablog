@@ -6,3 +6,5 @@
 // DONE: Requests should be authorized true
 // DONE: Must pay attention to the small signs
 // DONE: Pay attention at the stuff that is done behind the scene with javascript
+// DONE: Dateteime picking with tempus-dominus-bs-4
+// DONE: auto slug generation with javascript and RegEx

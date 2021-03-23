@@ -28,7 +28,8 @@
                     <td>{{ $post->slug }}</td>
                     <td>{{ $post->published_at }}</td>
                     <td class="text-right">
-                        <a href="{{ route('blog.destroy', ['blog' => $post->id]) }}" class="btn btn-danger delete-link"
+                        <a href="{{ route('blog.destroy', ['blog' => $post->id]) }}"
+                            class="btn btn-danger btn-sm delete-link"
                             data-message="Are you sure you want to delete this post?" data-form="delete-form">
                             Delete
                         </a>
