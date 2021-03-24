@@ -27,4 +27,5 @@ Route::resource('/admin/pages', 'Admin\PagesController', ['except' => ['show']])
 
 Route::resource('/admin/users', 'Admin\UsersController', ['except' => ['show', 'create', 'store']]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/blog', 'BlogPostController@index')->name('blog');
+Route::get('/blog/{slug}', 'BlogPostController@view')->name('blog.view');
